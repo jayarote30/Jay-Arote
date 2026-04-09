@@ -1,103 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Arote | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Arote Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: white;
+    }
+
+    header {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 32px;
+      color: #38bdf8;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    section {
+      padding: 50px;
+      text-align: center;
+    }
+
+    .hero img {
+      width: 150px;
+      border-radius: 50%;
+      margin-top: 20px;
+      border: 3px solid #38bdf8;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      width: 250px;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #1e293b;
+      padding: 20px;
+      text-align: center;
+      margin-top: 30px;
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-    <img src="profile.jpg" alt="Jay Arote" class="profile-pic">
-    <h1>Jay Arote</h1>
-    <p>Aspiring DRDO Engineer 🚀 | Coding Enthusiast</p>
-
-    <div class="contact-info">
-        <p>📧 jayarote56@gmail.com</p>
-        <p>📞 876****989</p>
-        <p>🔗 LinkedIn: Jay Arote</p>
-        <p>💻 GitHub: jayarote30</p>
-    </div>
+  <h1>Jay Arote</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#achievements">Achievements</a>
-</nav>
-
-<section class="card" id="about">
-    <h2>About Me</h2>
-    <p>
-        Hello! My name is Jay. I completed my 12th from Yashodhara Junior College 
-        and 10th from Podar International School, Solapur.
-        I am passionate about coding and presentation design.
-        My goal is to join DRDO and contribute to innovative technology.
-    </p>
+<section class="hero">
+  <h2>Hello, I'm a Web Developer 👋</h2>
+  <img src="https://via.placeholder.com/150" alt="profile">
+  <br>
+  <a href="#projects" class="btn">View My Work</a>
 </section>
 
-<section class="card">
-    <h2>Education</h2>
-    <ul>
-        <li>12th - Yashodhara Junior College</li>
-        <li>10th - Podar International School, Solapur</li>
-    </ul>
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate developer learning HTML, CSS, and JavaScript.</p>
 </section>
 
-<section class="card" id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-        <span>Coding</span>
-        <span>PPT Design</span>
-        <span>MS Word</span>
-        <span>PDF Creation</span>
-    </div>
-</section>
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
 
-<section class="card" id="projects">
-    <h2>Projects</h2>
-
-    <div class="project">
-        <h3>AI4A - Fraud Detection Website</h3>
-        <p>Developed a system to detect fraudulent activities using AI concepts.</p>
+    <div class="card">
+      <img src="https://via.placeholder.com/250">
+      <h3>Project 1</h3>
+      <p>My first project</p>
     </div>
 
-    <div class="project">
-        <h3>Design Thinking Project</h3>
-        <p>Smart lighting and temperature system to reduce library energy consumption.</p>
+    <div class="card">
+      <img src="https://via.placeholder.com/250">
+      <h3>Project 2</h3>
+      <p>My second project</p>
     </div>
 
-    <div class="project">
-        <h3>ACE Project</h3>
-        <p>Smart sensor system for monitoring elderly health.</p>
-    </div>
-
+  </div>
 </section>
 
-<section class="card" id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-        <li>Completed multiple Coursera courses (MATLAB)</li>
-        <li>Participated in college badminton events</li>
-        <li>Club-level cricket player</li>
-    </ul>
-</section>
-
-<section class="card">
-    <h2>Career Goal</h2>
-    <p>
-        To join DRDO (Defence Research and Development Organization) 
-        and contribute to advanced defense technologies.
-    </p>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>Email: your@email.com</p>
 </section>
 
 <footer>
-    <p>© 2026 Jay Arote</p>
+  <p>© 2026 Jay Arote</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
